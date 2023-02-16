@@ -11,5 +11,6 @@ export const Auth = {
 }
 
 export const AuthPath ={
-  login: "/accounts/authentication"
+  login: "/accounts/authentication",
+  register: "/accounts/registration"
 }

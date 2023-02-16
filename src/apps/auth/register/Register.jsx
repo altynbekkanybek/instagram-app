@@ -42,7 +42,7 @@ export default function Register() {
   return (
     <Components.Container>
       <section className={cls.register_page}>
-        <div className={cls.register_page_card}>
+        <div className={cls.register_page_card} data-aos="zoom-in-right">
           <Components.Image src={Logo} />
 
           <h3>
@@ -127,16 +127,7 @@ export default function Register() {
           
         </div>
 
-
-
-        <div className={cls.register_page_bottomCard}>
-          <p>
-             Есть аккаунт? 
-             <Link to={AuthPath.login}>
-                Вход
-             </Link>
-          </p>
-        </div>
+        <Components.Forms.AuthNavigate  location="register" />
       </section>
     </Components.Container>
   )
