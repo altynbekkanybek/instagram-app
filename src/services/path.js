@@ -10,6 +10,10 @@ export const Auth = {
   login: "/authentication"
 }
 
+export const Layout = {
+  home: "/"
+}
+
 export const AuthPath ={
   login: "/accounts/authentication",
   register: "/accounts/registration"

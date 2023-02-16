@@ -11,7 +11,7 @@ import { Hooks } from '../../../hooks'
 import { AuthPath } from '../../../services/path'
 export default function Register() {
 
-  const { actions } = Hooks.useLocations()
+  const { goToLogin } = Hooks.useLocations()
 
 
 
@@ -34,7 +34,7 @@ export default function Register() {
 
        request
           .then(() => {
-            actions.goToLogin()
+            goToLogin()
           })
   };
 
