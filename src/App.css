@@ -38,6 +38,7 @@ ul {
 .layout_row .layout_sidebar {
   width: 335px;
   height: 100vh;
+  position: sticky !important;
 }
 
 .layout_row .layout_routes {

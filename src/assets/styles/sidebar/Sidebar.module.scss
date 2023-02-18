@@ -3,20 +3,64 @@
   height: 100%;
   border-right: 1px solid #aeabab;
   position: sticky;
-  top: 0;
+  top: 20px;
   left: 0;
 
 
   &_content{
     padding-left: 25px;
-    
+    height: 85%;
     img {
       object-position: 0 -30px;
       object-fit: cover;
       width: 103px;
-      height: 31px;
+      height: 30px;
       cursor: pointer;
-      margin-top: 30px;
+      margin-top: 40px;
+    }
+
+    &_list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      padding-top: 35px;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        li {
+          font-size: 16px;
+          transition: .5s;
+          padding: 10px 5px;
+          border-radius: 25px;
+          width: 85%;
+
+          a {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            color: rgb(0, 0, 0);
+
+            svg {
+              font-size: 26px;
+            }
+
+
+          }
+          &:hover {
+            padding: 10px 3px;
+            border-radius: 20px;
+            background-color: rgb(172, 166, 166);
+
+            svg {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
     }
   }
 }
