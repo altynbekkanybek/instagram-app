@@ -1,14 +1,10 @@
-import React from 'react'
-import {Routes as Switch, Route} from "react-router-dom"
-import { Layout } from '../../services/path'
-import { LayoutPages } from '../Lazy'
+import React from 'react';
+import Layouts from './Layout';
 
 export default function LayoutRoutes() {
   return (
     <React.Fragment>
-      <Switch> 
-        <Route path={Layout.home} element={<LayoutPages.Home />}/>
-      </Switch>
+      <Layouts />
     </React.Fragment>
   )
 }

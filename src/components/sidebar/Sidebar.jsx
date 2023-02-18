@@ -1,10 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { Components } from '..';
 
+import Logo from "../../assets/images/logo/insta.png";
+import cls from "../../assets/styles/sidebar/Sidebar.module.scss";
 
 export default function Sidebar() {
   return (
-    <section className={}>
-      
+    <section className={cls.sidebar_wrapper}>
+      <div className={cls.sidebar_wrapper_content}>
+        <Components.Image src={Logo} />
+      </div>
     </section>
   )
 }

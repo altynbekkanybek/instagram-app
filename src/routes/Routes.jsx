@@ -13,6 +13,7 @@ export default function Routes() {
       duration: 1000
     })
   }, [])
+  
   return (
     <React.Fragment>
       <React.Suspense fallback={<Components.Loader />}>

@@ -1,6 +1,8 @@
 import React from 'react'
-import { Components } from '..'
-import Logo from "../../assets/images/logo/instagram.htm"
+import { Components } from '..';
+
+
+import Logo from "../../assets/images/logo/Instagram-Logo.wine.png"
 
 export default function Loader() {
   return (

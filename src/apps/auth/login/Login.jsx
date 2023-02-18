@@ -5,6 +5,7 @@ import { formsValidate } from '../../../helpers/forms';
 import { REQUEST } from '../../../api';
 import { Hooks } from '../../../hooks';
 
+
 import Logo from "../../../assets/images/logo/insta.png";
 import cls from "../../../assets/styles/login/Login.module.scss";
 
@@ -19,8 +20,6 @@ export default function Login() {
   } = useForm();
 
   const onSubmit = (data) => {
-
-
     if (data) {
       const request = REQUEST.LOGIN_USER(data)
 

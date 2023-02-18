@@ -127,7 +127,7 @@ export default function Register() {
           
         </div>
 
-        <Components.Forms.AuthNavigate  location="register" />
+        <Components.Forms.AuthNavigate  location="register"/>
       </section>
     </Components.Container>
   )

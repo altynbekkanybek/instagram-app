@@ -14,11 +14,12 @@ export default function AuthNavigate({location}) {
                 : "Есть аккаунт?"
              } 
              <Link to=
-             {
+               {
                 location === "login"
                    ? AuthPath.register
                    : AuthPath.login
-             }>
+               }
+             >
                 {
                   location === "login"
                      ? "Зарегистрироваться"
