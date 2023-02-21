@@ -5,10 +5,14 @@ import { Components } from '..';
 import Logo from "../../assets/images/logo/insta.png";
 import cls from "../../assets/styles/sidebar/Sidebar.module.scss";
 import { SidebarList } from '../../utils/list';
+import OptionModal from './OptionModal';
 
 export default function Sidebar() {
+  const [showOption, setShowOption] = React.useState()
 
-  const bottomList = SidebarList[5];
+  const bottomList = SidebarList[7];
+
+  const handleOption = () => setShowOption(prev => !prev);
 
 
   return (
@@ -19,9 +23,9 @@ export default function Sidebar() {
 
         <section className={cls.sidebar_wrapper_content_list}>
           <ul>
-              {SidebarList.slice(0,5).map(item => (
+              {SidebarList.slice(0,7).map(item => (
                 <li key={item.id}>
-                  <NavLink to>
+                  <NavLink className={({isActive})=> isActive ? cls.activeList : ""} to={item.route}>
                     <item.icon />
                     {item.caption}
                   </NavLink>
@@ -29,7 +33,7 @@ export default function Sidebar() {
               ))}
           </ul>
           <ul>
-            <li>
+            <li onClick={handleOption}>
               <Link>
                 <bottomList.icon />
                 {bottomList.caption}
@@ -38,6 +42,7 @@ export default function Sidebar() {
           </ul>
         </section>
       </div>
+      <OptionModal  isOpen={showOption}/>
     </section>
   )
 }

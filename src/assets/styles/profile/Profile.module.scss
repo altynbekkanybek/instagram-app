@@ -1,0 +1,68 @@
+
+.profile_wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+
+  &_top {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    div {
+      label {
+        input {
+          display: none;
+        }
+
+        img {
+          cursor: pointer;
+          object-fit: cover;
+          object-position: top;
+          width: 170px;
+          height: 170px;
+          border-radius: 100%;
+        }
+      }
+    }
+
+    &_name {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+
+      p {
+        font-size: 20px;
+      }
+
+      button {
+        background-color: rgb(221, 220, 220);
+        padding: 8px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      svg {
+        font-size: 30px;
+        font-weight: 600;
+      }
+    }
+
+    &_follow {
+      margin-top: 20px;
+      ul {
+        display: flex;
+        gap: 20px;
+      }
+    }
+
+    &_login {
+      margin-top: 30px;
+
+    }
+
+
+  }
+}

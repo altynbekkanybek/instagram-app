@@ -2,5 +2,9 @@
 
 export const requestPath = {
   createUser: "/users/",
-  loginUser: "/token/"
+  loginUser: "/token/",
+  currentUser: "/users/current_user/",
+  allUsers: "/users/",
+  followToUser: "/follow/",
+  userById: (id) => `/users/${id}/`
 }

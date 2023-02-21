@@ -11,7 +11,10 @@ export const Auth = {
 }
 
 export const Layout = {
-  home: "/"
+  home: "/",
+  profile: "/profile",
+  users: "/users",
+  profileID: "/profile/:id"
 }
 
 export const AuthPath ={

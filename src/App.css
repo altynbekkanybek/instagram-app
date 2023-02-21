@@ -22,11 +22,10 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
 }
 
 .loader img {
-  width: 100px;
+  width: 150px;
   height: 100px;
   cursor: pointer;
 }
@@ -38,9 +37,45 @@ ul {
 .layout_row .layout_sidebar {
   width: 335px;
   height: 100vh;
-  position: sticky !important;
+  position: relative;
 }
 
 .layout_row .layout_routes {
   width: 75%;
+}
+
+
+.option-modal {
+  width: 75%;
+  background-color: white;
+  position: absolute;
+  transition: .1s;
+  bottom: 10%;
+  left: -100%;
+  box-shadow: 0 0 5px rgb(244, 241, 241);
+}
+
+.option-modal.active {
+  left: 10%;
+}
+
+.option-modal ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.option-modal ul li {
+  cursor: pointer;
+  padding: 12px 5px;
+  border-bottom: 1px solid #999595;
+}
+
+.option-modal ul li a {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+
+.option-modal ul li a svg {
+  font-size: 25px;
 }

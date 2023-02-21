@@ -1,0 +1,86 @@
+
+.users_wrapper {
+  display: flex;
+  justify-content: center;
+
+  &_content {
+    width: 600px;
+    margin-top: 60px;
+
+
+    &_usersInline {
+      display: flex;
+      flex-direction: column;
+
+
+      .users {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+          color: #000;
+        }
+
+        &_info {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .avatar {
+            position: relative;
+            img {
+              width: 50px;
+              height: 50px;
+              border-radius: 100%;
+              object-fit: contain;
+              object-position: top;
+              cursor: pointer;
+            }
+
+            .online {
+              width: 10px;
+              height: 10px;
+              border-radius: 100%;
+              background-color: rgb(45, 186, 45);
+              box-shadow: 0 0 5px rgb(45, 186, 45);
+              position: absolute;
+              bottom: 10%;
+              right: 10%;
+            }
+          }
+
+          h4 {
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 600;
+            margin-bottom: 0;
+          }
+
+          p {
+            margin-top: 8px;
+            font-size: 14px;
+            color: gray;
+          }
+        }
+
+        section {
+          button {
+            padding: 7px 16px;
+            background-color: rgb(0, 149, 246);
+            color: white;
+            cursor: pointer; 
+            border-radius: 8px;
+            border: 0;
+            font-size: 14px;
+            font-weight: 600;
+
+            &:hover {
+              background-color: rgb(35, 136, 204);
+            }
+          }
+        }
+      }
+    }
+  }
+}

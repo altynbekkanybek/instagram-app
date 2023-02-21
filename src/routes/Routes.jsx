@@ -16,7 +16,7 @@ export default function Routes() {
   
   return (
     <React.Fragment>
-      <React.Suspense fallback={<Components.Loader />}>
+      <React.Suspense fallback={<Components.Loader fullHeight={"100vh"} />}>
         <Switch>
           <Route  path={Apps.accounts} element={<Routers.AuthRoutes />} />
           <Route path={Apps.layout} element={<Routers.LayoutRoutes />} />
